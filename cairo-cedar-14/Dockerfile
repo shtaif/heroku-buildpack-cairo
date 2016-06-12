@@ -4,6 +4,9 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN \
   apt-get upgrade -y
+  
+RUN \
+  apt-get install libgif-dev
 
 ADD ./harfbuzz.tar.bz2 /tmp
 ADD ./freetype.tar.bz2 /tmp
